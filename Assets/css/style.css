@@ -65,9 +65,26 @@ nav a::after {
   margin-bottom: 2%;
 }
 
+h2 {
+  display:inline-block;
+  font-size: 320%;
+  text-align: right;
+  color: var(--dGrey); 
+  padding-top: 0.5%;
+  padding-right: 1%;
+  border-right-style: solid;
+  border-right-color: var(--dGrey);
+  border-right-width: 5px;
+}
+
 h2 ::after {
   border-style: solid;
   border-color: var(--dGrey);
+}
+
+footer h2 {
+  padding-left: 5%;
+  width: 23%
 }
 
 
@@ -94,27 +111,19 @@ h2 ::after {
   padding-left: 0.7%;
 }
 
-.About-Me {
+.Div {
   display: flex;
   text-align: right;
+  width: 100%;
   padding-top: 1%;
   padding-bottom: 1%;
   padding-right: 1%;
   padding-left: 1%; 
 }
 
-.About-Mee {
-  display: flex;
-  font-size: 320%;
-  text-align: right;
-  justify-content: space-between;
-  color: var(--dGrey);
-  padding-top: 0.5%;
-  padding-right: 1%;
+.About-Me-Title {
+  width: 23%;  
   padding-left: 10%;
-  border-right-style: solid;
-  border-right-color: var(--dGrey);
-  border-right-width: 5px;
 }
 
 .About-Me-Info {
@@ -124,61 +133,83 @@ h2 ::after {
   align-items: top;
   justify-content: space-between;
   color: var(--dGrey);
+  width: 77%;
   padding-top: 0.5%;
   padding-bottom: 1%;
   padding-right: 1%;
   padding-left: 2%;
 }
 
+
 .Work {
-  display: flex;
-  text-align: right;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  padding-right: 1%;
-  padding-left: 1%; 
-}
-
-.Workee {
-  display: flex;
-  font-size: 320%;
-  text-align: right;
-  justify-content: space-between;
-  color: var(--dGrey);
-  padding-top: 0.5%;
-  padding-right: 1%;
+  width: 23.4%;
   padding-left: 10%;
-  border-right-style: solid;
-  border-right-color: var(--dGrey);
-  border-right-width: 5px;
 }
 
-.About-Me-Info-Sec {
-  display: inline-block;
+.Work-Div {
+  display: block;
+  position: relative;
+  text-align: left;
+  align-items: top;
+  justify-content: space-between;
+  margin-left: 2%;
+  border-width: 5px;
+  width: 77.6%;;
+  overflow: hidden;
+  
+}
+
+.About-Me-Info-Secss {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  
+}
+
+.About-Me-Info-Seccs {
+  display: flex;
+  position: relative;
   text-align: left;
   align-items: top;
   justify-content: space-between;
   color: var(--dGrey);
   border-style: solid;
   border-color: var(--lBlue);
-  margin-left: 2%;
   border-width: 5px;
-  max-width: 100%;
   overflow: hidden;
+  margin: 1.5%;
+  
+}
+
+.About-Me-Info-Secs {
+  display: flex;
+  position: relative;
+  text-align: left;
+  align-items: top;
+  justify-content: space-between;
+  color: var(--dGrey);
+  border-style: solid;
+  border-color: var(--lBlue);
+  border-width: 5px;
+  overflow: hidden;
+  margin: 1.5%;
+  
 }
 
 #title-box {
-  position: relative;
-  right: 5px;
-  bottom: 10%;
+  position: absolute;
+  left: 169px;
+  transform: translate(-50%, -50%);
+  bottom: 0.1%;
   background-color: var(--lBlue);
   border-style: solid;
   border-color: var(--lBlue);
   border-width: 5px;
   color: var(--tBlack);
-  width: 350px;
-  height: auto; 
-
+  width: 339px;
+  height: auto;
 }
 
 #title-box h3 {
@@ -196,8 +227,35 @@ h2 ::after {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+}
+
+
+
+
+
+
+
+.footer-nav {
+  text-align: center; /* Align navigation links to the center */
+  
+}
+
+.footer-nav ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav li {
+  display: inline-block; /* Display navigation links horizontally */
+  margin: 0 10px; /* Add spacing between links */
+}
+
+.footer-nav a {
+  text-decoration: none; /* Remove underline on links */
+  color: #333; /* Set link color */
 }
 
 @media screen and (max-width: 901px) {
@@ -205,3 +263,11 @@ img {
       flex-direction: column;
     }
   }
+
+@media screen and (max-width: 768px) {
+  .W {
+    width: 100%; /* Adjust width for smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+}
+
