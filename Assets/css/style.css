@@ -1,46 +1,48 @@
+/* Colour variables*/
 :root {
-    /* declare a variable with `--` syntax */
-    --dGrey: #2a2b3c;
-    --lBlue: #25c5dd;
-    --tBlack: black;
-  }
+  --dGrey: #2a2b3c;
+  --lBlue: #25c5dd;
+  --tBlack: black;
+}
 
+/* Universal elements */
+/* Header on page */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5%;
-    padding-bottom: 1%;
-    background-color: var(--dGrey);
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5%;
+  padding-bottom: 1%;
+  background-color: var(--dGrey);
+}
 
 header h1 {
-    display: flex;
-    font-size: 320%;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--lBlue);
-    color: var(--dGrey);
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-    padding-right: 0.7%;
-    padding-left: 6%;
-  }
-
-
-nav {
-    display: block;
-    font-size: 140%;
-  }
-
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 400px;
-    margin-right: 70px;
+  display: flex;
+  font-size: 320%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--lBlue);
+  color: var(--dGrey);
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-right: 0.7%;
+  padding-left: 6%;
 }
 
 
+nav {
+  display: block;
+  font-size: 140%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 400px;
+  margin-right: 70px;
+}
+
+/* All Links on page */
 nav a {
   color: var(--lBlue);
   text-decoration: none;
@@ -49,10 +51,13 @@ nav a {
   margin: 16px;
 }
 
+footer nav a {
+  color: var(--dGrey);
+}
 
 nav a::after {
   content: "";
-  position: absolute;
+  position: absolute; /* Positioning */
   left: 50%; /* Position the underline from the center */
   transform: translateX(-50%); /* Move the underline back by half of its width */
   bottom: -50%; /* Adjust this value to control the thickness of the underline */
@@ -77,13 +82,14 @@ h2 {
   border-right-width: 5px;
 }
 
+/* Add line under link */
 h2 ::after {
   border-style: solid;
   border-color: var(--dGrey);
 }
 
 footer h2 {
-  padding-left: 5%;
+  padding-left: 9%;
   width: 23%
 }
 
@@ -93,21 +99,23 @@ img {
   transition: filter 0.5s ease;/* Add a smooth transition effect */
 }
 
+/* Picture highlight when hovered */
 img:hover {
   filter: brightness(1.5); /* Adjust brightness to highlight the image */
 }
 
-
+/* The here image */
 .hero {
   position: relative;
   min-height: 200px;
   width: 100%;
   margin-bottom: 1%;
-  background-image: url("/Assets/Hero.png");
+  background-image: url("/Assets/stars.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center;/* Make image centre */
 }
 
+/* Text on hero image */
 .hero-text {
   position: absolute;
   right: 6%;
@@ -121,6 +129,7 @@ img:hover {
   padding-left: 0.7%;
 }
 
+/* All divided sections */
 .Div {
   display: flex;
   text-align: right;
@@ -131,12 +140,14 @@ img:hover {
   padding-left: 1%; 
 }
 
+/* About Me h2 */
 .About-Me-Title {
   width: 23%;  
   padding-left: 10%;
 }
 
-.About-Me-Info {
+/* Written Content */
+.Info {
   display: block;
   font-size: 180%;
   text-align: left;
@@ -150,12 +161,18 @@ img:hover {
   padding-left: 2%;
 }
 
+/* Written Content paragraph*/
+.Info p {
+  margin-bottom: 2%;
+}
 
+/* Work section */
 .Work {
   width: 23.4%;
   padding-left: 10%;
 }
 
+/* Work division */
 .Work-Div {
   display: block;
   position: relative;
@@ -169,7 +186,8 @@ img:hover {
   
 }
 
-.About-Me-Info-Secss {
+/* Photo side by side */
+.Work-Double-S-img {
   display: flex;
   position: relative;
   width: 100%;
@@ -177,9 +195,10 @@ img:hover {
   overflow: hidden;
 }
 
-.About-Me-Info-Seccs {
+/* Large image */
+.Work-L-img {
   display: flex;
-  position: relative;
+  position: relative; /* Positioning */
   text-align: left;
   border-style: solid;
   border-color: var(--lBlue);
@@ -187,7 +206,8 @@ img:hover {
   margin: 1.5%;
 }
 
-.About-Me-Info-Secs {
+/* Small image*/
+.Work-S-img {
   display: flex;
   position: relative;
   text-align: left;
@@ -202,6 +222,7 @@ img:hover {
   
 }
 
+/* Details of the work e.g name */
 #title-box {
   position: absolute;
   left: 169px;
@@ -231,12 +252,7 @@ img:hover {
 }
 
 
-
-
-
-
-
-
+/* Footer section */
 .footer-nav {
   text-align: center; /* Align navigation links to the center */
   
@@ -255,19 +271,14 @@ img:hover {
 
 .footer-nav a {
   text-decoration: none; /* Remove underline on links */
+  
   color: #333; /* Set link color */
 }
 
+/* Responsive section */
 @media screen and (max-width: 901px) {
-    header {
-      flex-direction: column;
+    header {/* Allow height to adjust based on content */
+      flex-direction: column;/* Adjust width for smaller screens */
     }
   }
-
-@media screen and (max-width: 768px) {
-  .W {
-    width: 100%; /* Adjust width for smaller screens */
-    height: auto; /* Allow height to adjust based on content */
-  }
-}
 
