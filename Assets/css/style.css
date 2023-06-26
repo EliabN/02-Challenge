@@ -1,0 +1,207 @@
+:root {
+    /* declare a variable with `--` syntax */
+    --dGrey: #2a2b3c;
+    --lBlue: #25c5dd;
+    --tBlack: black;
+  }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5%;
+    padding-bottom: 1%;
+    background-color: var(--dGrey);
+  }
+
+header h1 {
+    display: flex;
+    font-size: 320%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--lBlue);
+    color: var(--dGrey);
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-right: 0.7%;
+    padding-left: 6%;
+  }
+
+
+nav {
+    display: block;
+    font-size: 140%;
+  }
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 400px;
+    margin-right: 70px;
+}
+
+
+nav a {
+  color: var(--lBlue);
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  margin: 16px;
+}
+
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%; /* Position the underline from the center */
+  transform: translateX(-50%); /* Move the underline back by half of its width */
+  bottom: -50%; /* Adjust this value to control the thickness of the underline */
+  width: 120%;
+  height: 18%; /* Adjust this value to control the height of the underline */
+  background-color: var(--lBlue); /* Adjust this value to set the color of the underline */
+}
+
+.About-Me-Info p {
+  margin-bottom: 2%;
+}
+
+h2 ::after {
+  border-style: solid;
+  border-color: var(--dGrey);
+}
+
+
+.hero {
+  position: relative;
+  min-height: 200px;
+  width: 100%;
+  margin-bottom: 1%;
+  background-image: url("/Assets/Hero.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-text {
+  position: absolute;
+  right: 6%;
+  bottom: 15%;
+  font-size: 250%;
+  background-color: var(--lBlue);
+  color: var(--dGrey);
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-right: 0.7%;
+  padding-left: 0.7%;
+}
+
+.About-Me {
+  display: flex;
+  text-align: right;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+  padding-left: 1%; 
+}
+
+.About-Mee {
+  display: flex;
+  font-size: 320%;
+  text-align: right;
+  justify-content: space-between;
+  color: var(--dGrey);
+  padding-top: 0.5%;
+  padding-right: 1%;
+  padding-left: 10%;
+  border-right-style: solid;
+  border-right-color: var(--dGrey);
+  border-right-width: 5px;
+}
+
+.About-Me-Info {
+  display: block;
+  font-size: 180%;
+  text-align: left;
+  align-items: top;
+  justify-content: space-between;
+  color: var(--dGrey);
+  padding-top: 0.5%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+  padding-left: 2%;
+}
+
+.Work {
+  display: flex;
+  text-align: right;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+  padding-left: 1%; 
+}
+
+.Workee {
+  display: flex;
+  font-size: 320%;
+  text-align: right;
+  justify-content: space-between;
+  color: var(--dGrey);
+  padding-top: 0.5%;
+  padding-right: 1%;
+  padding-left: 10%;
+  border-right-style: solid;
+  border-right-color: var(--dGrey);
+  border-right-width: 5px;
+}
+
+.About-Me-Info-Sec {
+  display: inline-block;
+  text-align: left;
+  align-items: top;
+  justify-content: space-between;
+  color: var(--dGrey);
+  border-style: solid;
+  border-color: var(--lBlue);
+  margin-left: 2%;
+  border-width: 5px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#title-box {
+  position: relative;
+  right: 5px;
+  bottom: 10%;
+  background-color: var(--lBlue);
+  border-style: solid;
+  border-color: var(--lBlue);
+  border-width: 5px;
+  color: var(--tBlack);
+  width: 350px;
+  height: auto; 
+
+}
+
+#title-box h3 {
+  font-size: 250%;
+  padding: 1%;
+}
+
+#title-box p {
+  font-size: 150%;
+  padding: 1%;
+}
+
+#title-box-p {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 901px) {
+    header {
+      flex-direction: column;
+    }
+  }
