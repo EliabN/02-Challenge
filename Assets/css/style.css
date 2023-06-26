@@ -87,6 +87,16 @@ footer h2 {
   width: 23%
 }
 
+img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.5s ease;/* Add a smooth transition effect */
+}
+
+img:hover {
+  filter: brightness(1.5); /* Adjust brightness to highlight the image */
+}
+
 
 .hero {
   position: relative;
@@ -165,22 +175,16 @@ footer h2 {
   width: 100%;
   height: auto;
   overflow: hidden;
-  
 }
 
 .About-Me-Info-Seccs {
   display: flex;
   position: relative;
   text-align: left;
-  align-items: top;
-  justify-content: space-between;
-  color: var(--dGrey);
   border-style: solid;
   border-color: var(--lBlue);
   border-width: 5px;
-  overflow: hidden;
   margin: 1.5%;
-  
 }
 
 .About-Me-Info-Secs {
@@ -226,10 +230,6 @@ footer h2 {
   width: 100%;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
 
 
 
