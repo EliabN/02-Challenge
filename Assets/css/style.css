@@ -113,7 +113,7 @@ img:hover {
   min-height: 200px;
   width: 100%;
   margin-bottom: 1%;
-  background-image: url("../stars-hero.jpg");
+  background-image: url("../images/stars-hero.jpg");
   background-size: cover;
   background-position: center;/* Make image centre */
 }
