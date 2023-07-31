@@ -105,7 +105,6 @@ img {
 /* Picture highlight when hovered */
 img:hover {
   filter: brightness(1.5); /* Adjust brightness to highlight the image */
-  cursor: pointer;
 }
 
 /* The here image */
@@ -278,8 +277,46 @@ img:hover {
 
 /* Responsive section */
 @media screen and (max-width: 901px) {
-    header {/* Allow height to adjust based on content */
-      flex-direction: column;/* Adjust width for smaller screens */
-    }
+  header {/* Allow height to adjust based on content */
+    flex-direction: column;/* Adjust width for smaller screens */
   }
+}
+
+
+/* Make hero text responsive */
+@media screen and (max-width: 768px) {
+  .hero-text {
+    font-size: 150%;
+  }
+}
+
+/* Make navigation menu responsive */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+}
+
+/* Adjust text size based on screen width */
+@media screen and (max-width: 1250px) {
+  html {
+    font-size: 14px; /* Set the base font size to 14px for smaller screens */
+  }
+
+  .hero-text {
+    font-size: 150%;
+  }
+
+  h2 {
+    font-size: 180%;
+  }
+
+  .info {
+    font-size: 120%;
+  }
+}
 
