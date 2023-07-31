@@ -1,4 +1,5 @@
-# 02 Advanced CSS: Portfolio
+# My Portfolio
+#### A Web Portfolio that showcases my works and experince
 
 ## User Story
 
