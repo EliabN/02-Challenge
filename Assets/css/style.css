@@ -105,6 +105,7 @@ img {
 /* Picture highlight when hovered */
 img:hover {
   filter: brightness(1.5); /* Adjust brightness to highlight the image */
+  cursor: pointer;
 }
 
 /* The here image */
