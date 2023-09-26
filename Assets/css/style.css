@@ -276,44 +276,20 @@ img:hover {
   color: #333; /* Set link color */
 }
 
-/* Responsive section */
-@media screen and (max-width: 901px) {
-  header {/* Allow height to adjust based on content */
-    flex-direction: column;/* Adjust width for smaller screens */
-  }
-}
 
-
-/* Make hero text responsive */
-@media screen and (max-width: 768px) {
-  .hero-text {
-    font-size: 150%;
-  }
-}
-
-/* Make navigation menu responsive */
-@media screen and (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav li {
-    margin: 10px 0;
-  }
-}
 
 /* Adjust text size based on screen width */
 @media screen and (max-width: 1250px) {
   html {
-    font-size: 14px; /* Set the base font size to 14px for smaller screens */
+    font-size: 16px; /* Set the base font size to 14px for smaller screens */
   }
 
   .hero-text {
-    font-size: 150%;
+    font-size: 200%;
   }
 
   h2 {
-    font-size: 180%;
+    font-size: 220%;
   }
 
   .info {
@@ -321,3 +297,53 @@ img:hover {
   }
 }
 
+/* Responsive section */
+@media screen and (max-width: 901px) {
+  header {
+    flex-direction: column; /* Allow height to adjust based on content */
+  }
+
+  nav {
+    justify-content: center; /* Center the content horizontally */
+    align-self: center; /* Center the content vertically */
+  }
+
+  nav ul {
+    width: 100%;
+  }
+  
+  h2 {
+    font-size: 160%;
+  }
+}
+
+
+/* Make hero text responsive and make navigation menu responsive*/
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px; /* Set the base font size to 14px for smaller screens */
+  }
+  nav ul {
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 160%;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+}
+
+/* Make hero text responsive and make navigation menu responsive*/
+@media screen and (max-width: 680px) {
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  h2 {
+    font-size: 130%;
+  }
+}
